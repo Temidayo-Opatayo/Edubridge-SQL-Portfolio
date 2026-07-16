@@ -53,7 +53,7 @@ left join person_emailaddress as PE
 on PP.BusinessEntityID = PE.BusinessEntityID
 left join person_personphone as PPP
 on PE.BusinessEntityID = PPP.BusinessEntityID
-where PP.PersonType in ('IN', 'SC')
+where PP.PersonType in ('IN', 'SC');
 
 -- 5. List all reseller store names, and the sales person assigned to manage the store
 select * from sales_store;
