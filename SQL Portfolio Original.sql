@@ -3,7 +3,7 @@
 -- 1. Retrieve the full names of customers alphabetically with the total amount of money they have spent 
 select * from sales_customer;
 select * from person_person;
-select * from sales_salesorderheader
+select * from sales_salesorderheader;
 
 select concat_ws(' ', pp.firstname, pp.middlename, pp.lastname) as full_name, sum(SOH.TotalDue) as total_spent
 from person_person as PP
